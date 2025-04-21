@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MP4 Animation Gallery</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #111;
+      color: #eee;
+      margin: 0;
+      padding: 2rem;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .video-block {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">🎥 MP4 Video Gallery</h1>
+
+  <div class="gallery">
+    <div class="video-block">
+      <video src="picture1.mp4" controls muted loop></video>
+      <div class="caption">This is the first video moment.</div>
+    </div>
+    <div class="video-block">
+      <video src="picture2.mp4" controls muted loop></video>
+      <div class="caption">Another smooth animation in motion.</div>
+    </div>
+    <div class="video-block">
+      <video src="picture3.mp4" controls muted loop></video>
+      <div class="caption">A strange and stylish clip.</div>
+    </div>
+    <!-- Add more blocks for more videos -->
+  </div>
+
+</body>
+</html>
